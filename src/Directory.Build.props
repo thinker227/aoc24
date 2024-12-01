@@ -1,0 +1,31 @@
+<Project>
+  
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>Aoc24</RootNamespace>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Utils/Utils.csproj"/>
+    <PackageReference Include="SuperLinq" Version="6.2.0" />
+    <PackageReference Include="Pidgin" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System"/>
+    <Using Include="System.IO"/>
+    <Using Include="System.Collections.Generic"/>
+    <Using Include="System.Collections.Immutable"/>
+    <Using Include="System.Linq"/>
+    <Using Include="SuperLinq"/>
+    <Using Include="Utils"/>
+  </ItemGroup>
+
+</Project>

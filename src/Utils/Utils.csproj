@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Remove self from project references specified in Directory.Build.props -->
+    <ProjectReference Remove="./Utils.csproj"/>
+  </ItemGroup>
+
+</Project>
