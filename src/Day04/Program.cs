@@ -41,9 +41,10 @@ var xMases = clean
             && y <= h - 2
             && y >= 1;
     })
+    .Select(v => v.Index)
     .Where(v => (
-            (clean[v.Index - w - 1], clean[v.Index + w + 1]),
-            (clean[v.Index - w + 1], clean[v.Index + w - 1]))
+            (clean[v - w - 1], clean[v + w + 1]),
+            (clean[v - w + 1], clean[v + w - 1]))
         is (
             ('M', 'S') or ('S', 'M'),
             ('M', 'S') or ('S', 'M')))
