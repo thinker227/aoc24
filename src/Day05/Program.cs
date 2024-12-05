@@ -21,7 +21,8 @@ var areOrdered = updates
             .WindowLeft(x.Length)
             .All(x => x
                 .Skip(1)
-                .All(y => !rules.Contains((y, x[0]))))));
+                .All(y => !rules.Contains((y, x[0]))))))
+    .ToList(); // avoid multiple enumeration
 
 var orderedSum = areOrdered
     .Where(x => x.ordered)
